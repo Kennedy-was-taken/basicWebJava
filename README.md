@@ -1,4 +1,4 @@
-# Authentication and Authorization using JWT (Json Web Token)
+# Authentication and Authorization using Json Web Token (JWT)
 
 A simple application for creating a json web token to authenticate and authorize a user, so that only authorized users can access and manipulate data
 
