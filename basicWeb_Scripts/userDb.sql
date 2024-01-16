@@ -1,0 +1,22 @@
+USE MASTER
+IF EXISTS (SELECT * FROM sys.databases WHERE name = 'userDB')
+	DROP DATABASE userDB
+
+CREATE DATABASE userDB
+
+USE userDB
+
+
+--CREATING TABLES
+
+	--PROFILE TABLE
+	CREATE TABLE user_profile(
+		profile_id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+		first_name VARCHAR(50) NOT NULL,
+		middle_name VARCHAR(50) NOT NULL,
+		last_name VARCHAR(50) NOT NULL,
+		username VARCHAR(50) NOT NULL,
+		age INT NOT NULL,
+		role VARCHAR(13) NOT NULL,
+		account_ref_id INT NOT NULL
+	);
